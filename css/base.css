@@ -34,12 +34,13 @@ div.image-selections, .partner, .sponsors {
   flex-wrap: wrap;
   flex: 1;
   justify-content: space-between;
+
 }
 
-div.images, .partner img, .sponsor img{
+div.images, .partner, .sponsor {
   width: 300px;
   margin-top: 40px;
-  
+  text-align: center;
 }
 
 img {
@@ -68,13 +69,13 @@ address {
   display: inline;
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 750px) {
   body {
     background-color: lightblue;
   }
 
 
-  div.images, .partner img, .sponsor img {
+  div.images, .partner, .sponsor {
     width: 240px;
     margin-top: 40px;
     
@@ -87,7 +88,7 @@ address {
     background-color: salmon;
   }
 
-  div.images, .partner img, .sponsor img{
+  div.images, .partner, .sponsor {
     width: 200px;
     margin-top: 40px;
     
