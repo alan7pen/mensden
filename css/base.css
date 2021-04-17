@@ -1,20 +1,40 @@
 body {
   background-color: #f1f1f1;
   padding: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
 }
 
 
-header {
-  //border: 1px solid green;
+
+header, main {
+  /*border: 1px solid red; */
+  width: 90%;
+  margin: 2em auto;
+  text-align: left;
+}
+
+
+header, h1, h2 {
+  /* border: 1px solid green; */
   display: flex;
   flex-direction: column; /* make grid columns */
   align-items: center;
-  padding: 1em;  
+}
+
+
+h1, h2 {
+  font-size: 48px;
+  align-items: center;
 }
 
 h1 {
   font-size: 64px;
+  align-items: center;
+  margin: 0px 0px;
+  width: 100%;
 }
+
 
 button {
   font-size: 20px;
@@ -22,11 +42,7 @@ button {
   width: 250px;
 }
 
-main {
-  //border: 1px solid red;
-  width: 90%;
-  margin: 2em auto;
-}
+
 
 div.image-selections, .partner, .sponsors {
   //border: 1px solid blue;
@@ -67,14 +83,22 @@ img {
 
 address {
   display: inline;
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 750px) {
   body {
-    background-color: lightblue;
+    /*background-color: lightblue;*/
+    font-size: 20px;
   }
 
+  h1 {
+    font-size: 48px;
+  }
 
+  h2 {
+    font-size: 40px;
+  }
   div.images, .partner, .sponsor {
     width: 240px;
     margin-top: 40px;
@@ -85,7 +109,7 @@ address {
 
 @media only screen and (max-width:610px) {
   body {
-    background-color: salmon;
+    //background-color: salmon;
   }
 
   div.images, .partner, .sponsor {
