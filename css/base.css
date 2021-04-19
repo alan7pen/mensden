@@ -57,6 +57,10 @@ button {
 }
 
 
+footer {
+  font-size: 18px;
+}
+
 
 div.image-selections, .partner, .sponsors, .findus_section {
   /*border: 1px solid blue;*/
@@ -131,6 +135,10 @@ address {
     font-size: 24px;
   }
 
+  footer p {
+    font-size: 14px;
+  }
+
   div.images, .partner, .sponsor {
     width: 240px;
     margin-top: 40px;
@@ -168,6 +176,10 @@ address {
 
   p, li {
     font-size: 20px;
+  }
+
+  footer {
+    font-size: 14px;
   }
 }
 
