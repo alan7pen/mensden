@@ -131,6 +131,10 @@ address {
     font-size: 40px;
   }
 
+  nav {
+    display: none;
+  }
+  
   nav ul li a, p, li {
     font-size: 24px;
   }
@@ -168,6 +172,10 @@ address {
 
   h2 {
     font-size: 32px;
+  }
+
+  nav {
+    display: none;
   }
 
   nav ul li a {
