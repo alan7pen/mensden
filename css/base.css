@@ -87,7 +87,7 @@ div.images, .partner, .sponsor, .findus, .gethelp {
 }
 
 .sponsors_nav, .sponsors_section, .sponsor, .sponsors {
-  display: none;
+  display: visiable;
 }
 
 .findus, .findus p {
