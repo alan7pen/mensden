@@ -34,11 +34,14 @@
     <div>
       <nav id="nav-bar">
         <ul>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class= "nav-link" href="#finding">Finding</a></li>
-          <li><a class= "nav-link" href="#contact">Contact</a></li>
-          <li><a class="nav-link" href="#partnerships">Partnerships</a></li>
-          <li><a class="nav-link" href="#sponsors">Sponsors</a></li>
+          <li><a class="nav-link about_nav" href="#about">About</a></li>
+          <li><a class= "nav-link contact_nav" href="#contact">Contact</a></li>
+          <li><a class="nav-link partnerships_nav" href="#partnerships">Partnerships</a></li>
+          <li><a class="nav-link gettinghelp_nav" href="#gethelp">Get Help</a></li>
+          <!--
+            <li><a class="nav-link sponsors_nav" href="#sponsors">Sponsors</a></li>
+          -->
+          <li><a class= "nav-link finding_nav" href="#finding">Finding</a></li>
         </ul>
       </nav>
     </div> 
@@ -50,11 +53,13 @@
 
 
     <!-- ABOUT SECTION -->
-    <section id="about">
+    <section id="about" class="about_section">
       <h2>About</h2>
-      <p>Mens Den is a men's peer support group set up in May 2018.</p>
+      <p>Mens Den is a men's peer support group set up in May 2018.
+        We offer a safe place that is non-judgemental and open to men of all ages, regardless of race, disability etc.
+      </p>
       <p class="meet" >We meet at <address class="details" >Colne Open Door</address>, <day class="details" >Wednesday</day> evening between <time class="details" >6pm</time> and <time class="details" >7:30pm</time>.</p>
-      <p>Mens Den is confidential<sup>*</sup>, totally non-judgemental and open to men of all ages, regardless of race, disability etc.</p>
+    
       <p>The format for our meeting is simple:</p>
       <ul>
         <li><strong>Check-in</strong> - Gives each chap a few minutes to talk about their week; the good, the bad and what is on their mind</li>
@@ -65,40 +70,11 @@
     </section>
 
 
-    <!-- FINDING US SECTION -->
-    <section id="finding">
-      <h2>Finding us</h2>
-      <div class="findus_section">
-        <div class="findus">
-          <div>Colne Open Door</div>
-          <div>Use side entrance via Black Side door</div>
-          <div>1 Great George Street</div>
-          <div>Colne</div>
-          <div>BB8 0SY</div>
-          <div>&nbsp;</div>
 
-          <div>
-            <img src="./images/map.png" alt="Map: 1 Great George Street, Coln ,BB8 0SY" >
-            <div>View map: <a href="https://www.openstreetmap.org/#map=19/53.85626/-2.17104" target="_map">www.openstreetmap.org</a></div>
-          </div>
-        </div>
-
-        <div class="findus">
-          <div id="twitter" class="twitter tab-pane">
-            <div>
-              <a href="https://twitter.com/dencolne" target="_twitter">@dencolne twitter feed</a>
-            </div>
-            <a class="twitter-timeline" href="https://twitter.com/dencolne" width="100%" height="600"></a>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
 
     <!-- CONTACT SECTION -->
-    <section id="contact">
+    <section id="contact" class="contact_section">
       <div>
         <h2>Contact us</h2>
         <p>If you want to know more about Mens Den, please get in touch.</p>
@@ -112,7 +88,7 @@
 
 
     <!-- PARTNERSHIP SECTION -->
-    <section id="partnerships">
+    <section id="partnerships" class="partnerships_section">
       <div>
         <h2>Partnerships</h2>
         <p>We work with closely with a number of local organisations which include:</p>
@@ -144,8 +120,41 @@
     </section>
 
 
-    <!-- SPONSORS SECTION -->
-    <section id="sponsors">
+    <!-- GET HELP -->
+    <section id="gethelp" class="gethelp_section">
+      <div>
+        <h2>Get Help</h2>
+        <p>From time to time we all need additional support to deal with something.  Don't feel you have to carry the weight of the world on your own shoulders.  Please take a look at the following organisations for additional support when necessary.</p>
+        <div class="getsomehelp">
+          <div class="gethelp 3p_samaritans">
+            <a href="https://www.samaritans.org" target="3p_samaritans">
+              <img src="./images/samaritans.png" alt="Samaritans.org" />
+              <p><a href="https://www.samaritans.org" target="3p_samaritans">https://www.samaritans.org</a></p>
+              <p>Ring 116123 (UK/ROI)</p>
+            </a>
+          </div>
+
+          <div class="gethelp 3p_andysmanclub">
+            <a href="https://andysmanclub.co.uk/" target="3p_andysmanclub">
+              <img src="./images/andysmanclub.png" alt="Andy's Man Club" />
+              <p><a href="https://andysmanclub.co.uk/" target="3p_andysmanclub">https://andysmanclub.co.uk</a></p>
+              <p>Meet Mondays 7pm</p>
+            </a>
+          </div>
+
+          <div class="gethelp 3p_mind">
+            <a href="https://www.mind.org.uk/" target="3p_mind">
+              <img src="./images/mind.png" alt="Mind" />
+              <p><a href="https://www.mind.org.uk/" target="3p_mind">https://www.mind.org.uk</a></p>
+            </a>
+          </div>
+
+    
+      </div>
+    </section><!-- SPONSORS SECTION -->
+
+
+    <section id="sponsors" class="sponsors_section">
       <div>
         <h2>Sponsors</h2>
         <p>The following organisaions have provided our group financial or other:</p>
@@ -179,13 +188,43 @@
       </div>
     </section>
 
+
+    <!-- FINDING US SECTION -->
+    <section id="finding" class="finding_section">
+      <h2>Finding us</h2>
+      <div class="findus_section">
+        <div class="findus">
+          <div>Colne Open Door</div>
+          <div>Use side entrance via Black Side door</div>
+          <div>1 Great George Street</div>
+          <div>Colne</div>
+          <div>BB8 0SY</div>
+          <div>&nbsp;</div>
+
+          <div>
+            <img src="./images/map.png" alt="Map: 1 Great George Street, Coln ,BB8 0SY" >
+            <div>View map: <a href="https://www.openstreetmap.org/#map=19/53.85626/-2.17104" target="_map">www.openstreetmap.org</a></div>
+          </div>
+        </div>
+
+        <div class="findus">
+          <div id="twitter" class="twitter tab-pane">
+            <div>
+              <a href="https://twitter.com/dencolne" target="_twitter">@dencolne twitter feed</a>
+            </div>
+            <a class="twitter-timeline" href="https://twitter.com/dencolne" width="100%" height="600"></a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER SECTION -->
   <footer>
     <div>
       <p>Note: Mens den is not responsible for content found on other sites that we link to.</p>
-      <p><em><sup>*</sup>We are required to report any act of terrorism directly to the Police.</p>
       <p>&copy;Copyright Mens Den Colne 2018-2021</p>
     </div>
   </footer>
