@@ -4,18 +4,27 @@ body {
   font-size: 24px;
 }
 
-
-header, main, footer, h1, h2, p, ol, ul, li, address {
+header, main, footer, h1, h2, p, ol, ul, li, address, a:link, a:visited, a:hover {
   font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   text-decoration: none;
-
-  /*font-family: 'Dela Gothic One', cursive;*/
-  /*background-color: yellow;*/
+  color: black;
 }
 
 h1, h2, nav {
   align-items: center;
+}
+
+a:link, a:visited {
+  text-decoration: underline;
+}
+
+a:hover
+{
+  text-decoration: none;
+  text-decoration-color: black;
+  background: red;
+  color: white;
 }
 
 header, main {
@@ -25,7 +34,6 @@ header, main {
   text-align: left;
 }
 
-
 header, h1, h2 {
   /* border: 1px solid green; */
   display: flex;
@@ -33,8 +41,6 @@ header, h1, h2 {
   align-items: center;
 
 }
-
-
 
 h1 {
   font-size: 64px;
@@ -50,19 +56,18 @@ nav ul li {
 h2, nav ul li a {
   font-size: 32px;
 }
+
 button {
   font-size: 20px;
   height: 60px;
   width: 250px;
 }
 
-
 footer {
   font-size: 18px;
 }
 
-
-div.image-selections, .partner, .sponsors, .findus_section {
+div.image-selections, .partner, .sponsors, .findus_section, .getsomehelp {
   /*border: 1px solid blue;*/
   display: flex;
   flex-wrap: wrap;
@@ -75,11 +80,14 @@ div.image-selections, .partner, .sponsors, .findus_section {
   /*border: 1px solid red;*/
 }
 
-
-div.images, .partner, .sponsor, .findus {
+div.images, .partner, .sponsor, .findus, .gethelp {
   width: 300px;
   margin-top: 40px;
   text-align: center;
+}
+
+.sponsors_nav, .sponsors_section, .sponsor, .sponsors {
+  display: none;
 }
 
 .findus, .findus p {
@@ -95,8 +103,6 @@ img, .twitter {
 .logo {
   border-radius: 50%;
 }
-
-
 
 .active {
   background-color: grey;
@@ -115,7 +121,6 @@ address {
   text-decoration: none;
   
 }
-
 
 @media only screen and (max-width: 750px) {
   body {
@@ -143,7 +148,7 @@ address {
     font-size: 14px;
   }
 
-  div.images, .partner, .sponsor {
+  div.images, .partner, .sponsor, .getsomehelp {
     width: 240px;
     margin-top: 40px;
   }
@@ -160,7 +165,7 @@ address {
     font-size: 20px;
   }
 
-  div.images, .partner, .sponsor {
+  div.images, .partner, .sponsor, .getsomehelp {
     width: 200px;
     margin-top: 40px;
   }
@@ -190,7 +195,6 @@ address {
     font-size: 14px;
   }
 }
-
 nav ul li {
   display: inline-block;
   padding: 15px 10px;
