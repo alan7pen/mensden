@@ -1,5 +1,5 @@
 body {
-  background-color: #f1f1f1;
+  background-color: #000000;
   padding: 20px;
   font-size: 24px;
 }
@@ -8,7 +8,7 @@ header, main, footer, h1, h2, p, ol, ul, li, address, a:link, a:visited, a:hover
   font-family: 'Ubuntu', sans-serif;
   font-style: normal;
   text-decoration: none;
-  color: black;
+  color: #dddddd;
 }
 
 h1, h2, nav {
@@ -102,6 +102,26 @@ img, .twitter {
 
 .logo {
   border-radius: 50%;
+}
+
+.contact_website, .contact_email, .contact_twitter, .contact_facebook {
+  width: 24pt;
+}
+
+.contact_website::before {
+  content: url(https://www.dencolne.org/images/024_www_red.png) " ";
+}
+
+.contact_email::before  {
+  content: url(https://www.dencolne.org/images/024_email_red.png) " ";
+}
+
+.contact_twitter::before  {
+  content: url(https://www.dencolne.org/images/024_twitter_red.png) " ";
+}
+
+.contact_facebook::before  {
+  content: url(https://www.dencolne.org/images/024_facebook_red.png) " ";
 }
 
 .active {
