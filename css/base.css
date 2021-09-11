@@ -15,11 +15,11 @@ h1, h2, nav {
   align-items: center;
 }
 
-a:link, a:visited {
+a:link, a:visited, a:link p, a:visited p {
   text-decoration: underline;
 }
 
-a:hover
+a:hover, a:hover p
 {
   text-decoration: none;
   text-decoration-color: black;
@@ -108,21 +108,26 @@ img, .twitter {
   width: 24pt;
 }
 
-.contact_website::before {
+.contact_website::before, .contact_website_link::before {
   content: url(https://www.dencolne.org/images/024_www_red.png) " ";
 }
 
-.contact_email::before  {
+.contact_email::before {
   content: url(https://www.dencolne.org/images/024_email_red.png) " ";
 }
 
-.contact_twitter::before  {
+.contact_twitter::before, .contact_twitter_link::before {
   content: url(https://www.dencolne.org/images/024_twitter_red.png) " ";
 }
 
-.contact_facebook::before  {
+.contact_facebook::before {
   content: url(https://www.dencolne.org/images/024_facebook_red.png) " ";
 }
+
+.contact_location_link::before {
+  content: url(https://www.dencolne.org/images/024_location_red.png) " ";
+}
+
 
 .active {
   background-color: grey;
