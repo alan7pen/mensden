@@ -23,7 +23,7 @@ a:hover, a:hover p
 {
   text-decoration: none;
   text-decoration-color: black;
-  background: #2787b1;
+  background: red;
   color: white;
 }
 
@@ -53,7 +53,7 @@ nav ul li {
   display: inline-block;
 }
 
-h2, nav ul li a, h1 {
+h2, nav ul li a {
   font-size: 32px;
 }
 
@@ -86,17 +86,13 @@ div.images, .partner, .sponsor, .findus, .gethelp {
   text-align: center;
 }
 
-.areacovered {
-  width: 100%;
-}
-
 .sponsors_nav, .sponsors_section, .sponsor, .sponsors {
-  display: none;
+  display: visiable;
 }
 
 .findus, .findus p {
   text-align: left;
-  xwidth: 48%;
+  width: 48%;
 }
 
 img, .twitter {
@@ -105,7 +101,7 @@ img, .twitter {
 }
 
 .logo {
-  //border-radius: 50%;
+  border-radius: 50%;
 }
 
 .contact_website, .contact_email, .contact_twitter, .contact_facebook {
@@ -113,23 +109,23 @@ img, .twitter {
 }
 
 .contact_website::before, .contact_website_link::before {
-  content: url(https://www.dencolne.org/images/024_www.png) " ";
+  content: url(https://www.dencolne.org/images/024_www_red.png) " ";
 }
 
 .contact_email::before {
-  content: url(https://www.dencolne.org/images/024_email.png) " ";
+  content: url(https://www.dencolne.org/images/024_email_red.png) " ";
 }
 
 .contact_twitter::before, .contact_twitter_link::before {
-  content: url(https://www.dencolne.org/images/024_twitter.png) " ";
+  content: url(https://www.dencolne.org/images/024_twitter_red.png) " ";
 }
 
 .contact_facebook::before {
-  content: url(https://www.dencolne.org/images/024_facebook.png) " ";
+  content: url(https://www.dencolne.org/images/024_facebook_red.png) " ";
 }
 
 .contact_location_link::before {
-  content: url(https://www.dencolne.org/images/024_location.png) " ";
+  content: url(https://www.dencolne.org/images/024_location_red.png) " ";
 }
 
 .active {
@@ -137,10 +133,6 @@ img, .twitter {
   color: #ffffff;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   outline: none;
-}
-
-.twitter {
-  visibility: none;
 }
 
 .meet {
@@ -155,17 +147,16 @@ address {
 
 @media only screen and (max-width: 750px) {
   body {
-    xbackground-color: lightblue;
+    /*background-color: lightblue;*/
     font-size: 20px;
   }
 
   h1 {
-    font-size: 36px;
-    text-align: center;
+    font-size: 48px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 40px;
   }
 
   nav {
@@ -193,11 +184,11 @@ address {
 
 @media only screen and (max-width:610px) {
   body {
-    xbackground-color: salmon;
+    /*background-color: salmon;*/
     font-size: 20px;
   }
 
-  div.images, .partner, .sponsor, .getsomehelp, {
+  div.images, .partner, .sponsor, .getsomehelp {
     width: 200px;
     margin-top: 40px;
   }
